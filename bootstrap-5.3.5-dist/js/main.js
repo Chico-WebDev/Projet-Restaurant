@@ -16,3 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
       new bootstrap.Tooltip(tooltipTriggerEl);
     });
   });
+
+  document.getElementById("sendMail").addEventListener("click", () => {
+    const message = document.getElementById('exampleFormControlTextarea1').value;
+    const email = "chicowebdev@gmail.com";
+    const subject = "Message depuis le site";
+  
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    
+    window.location.href = mailtoLink;
+  })
+  

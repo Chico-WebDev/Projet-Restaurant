@@ -2,8 +2,11 @@
 <html lang="en"> 
  <head>    
     <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>NEXLY FOOD 🍔</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="images/banniere restaurant.jpg" type="image/x-icon">  
+    <title>NEXLY FOOD 🍔</title>
+    <!-- Lien pour les icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
     <!-- Lien pour les font-family de google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Lien de mon fichier bosstrap télécharger qui comporte tous les éléments de boostrap que j'ai besoin -->
@@ -16,7 +19,7 @@
     </style>  
  </head>
 
-<body class="">
+<body>
 
   <!-- Bouton ou lien qui permet de remonter en haut de la page -->
   <a class="position-fixed end-0 bottom-0 m-2 m-sm-2 m-lg-3 link" href="#Acceuil"><button class="btn btn-primary text-light fw-bold">⬆</button></a>
@@ -41,10 +44,9 @@
         <!-- contenu de ma nav bar item qui sera en responsive -->
          <div class="collapse navbar-collapse text-center" id="navbarNav">
           <ul class="navbar-nav ms-auto me-auto d-flex gap-2">
-            <li class="nav-item"><a class="nav-link" href="#Acceuil">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#Appetizers">Appetizers</a></li>
-            <li class="nav-item"><a class="nav-link" href="#Main Courses">Main</a></li>
-            <li class="nav-item"><a class="nav-link" href="#Desserts">Desserts</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Acceuil">Acceuil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Apropos">Apropos</a></li>
             <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
           </ul>
             
@@ -54,10 +56,10 @@
               Menu special
             </a>
             <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#">Plat du jour</a></li>
-              <li><a class="dropdown-item" href="#">Nos offres et Promo%</a></li>
+               <li><a class="dropdown-item" href="#Menu">Plat du jour</a></li>
+              <li><a class="dropdown-item" href="#Menu">Nos offres et Promo%</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Commander et Réserver</a></li>
+              <li><a class="dropdown-item" href="https://wa.me/2250586247542?text=Bonjour%20je%20souhaite%20avoir%20plus%20d'infos%20sur%20vos%20commande%20et%20réservation!." target="_blank">Commander et Réserver</a></li>
             </ul>
           </li>
           
@@ -113,7 +115,7 @@
   </header>
   
   <!-- debut menu peincipal -->
-  <main class="py-2">
+  <main id="Menu" class="py-2">
     
     <!-- debut d'une section globale -->
     <section class="container text-center">
@@ -121,7 +123,7 @@
        <!-- menu d'entré -->
       <div id="Appetizers" class="pb-2"> 
             
-        <h2>1- Appetizers</h2>  
+        <h2 class="fw-bold">1- Appetizers</h2>  
         <p>Les appetizers (entrées) sont des plats servis avant le plat principal pour ouvrir l'appétit.</p>
     
         <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-3">
@@ -173,7 +175,7 @@
             
       <!-- menu principal -->
       <div id="Main Courses" class="py-5">
-        <h2>2- Main Courses</h2> 
+        <h2 class="fw-bold">2- Main Courses</h2> 
         <p>Les plats principaux sont les repas les plus consistants d'un menu, souvent à base de viande, de poisson, de volaille ou de plats végétariens</p>
 
         <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-3"> 
@@ -216,7 +218,7 @@
 
       <!-- menu dessert -->
       <div id="Desserts" class="pb-5 pt-2">
-        <h2>3- Desserts</h2>  
+        <h2 class="fw-bold">3- Desserts</h2>  
         <p>Un dessert est un plat sucré servi à la fin d'un repas. Il peut être composé de gâteaux, de tartes, de crèmes, de fruits, de glaces ou d'autres douceurs.</p>
 
         <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-3">
@@ -256,21 +258,51 @@
         <!-- fin menu dessert -->
       </div>
 
-      <!-- debut conteneur contact -->
-      <div id="Contact">
-        <h2>Contact & Reservations 📞✨</h2>
-        <p>       
-          Planning a special dinner or a gathering with loved ones? Reserve your table at NEXLY for an unforgettable dining experience!
-          You can book your reservation by calling us at <a class="link text-decoration-none link-primary" href="tel"> +225 ##########</a> or sending an email to <a class="link text-decoration-none link-primary" href="mailto">nexlyfood@gmail.com</a>.
-          For convenience, you can also fill out our online reservation form on our website.
-          Our team is here to assist you with any special requests to make your visit perfect.
-          We look forward to welcoming you soon! 🍽😊
-        </p>
+      <!-- A Propos -->
+      <div id="Apropos" class="mb-5 mt-1 container text-center">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+            <div class="col">
+              <img src="images/banniere restaurant 1.jpg" width="100%" height="400px" alt="image du restaurant">
+            </div>
+            <div class="col mt-4 mt-lg-0">
+              <h2 class="fw-bold">About Us</h2>
+              <p>The restaurant offers a warm and welcoming atmosphere where customers can enjoy delicious, freshly prepared meals. Known for its traditional dishes and modern culinary touches, the restaurant serves a variety of foods, including local specialties, grilled meats, fresh salads, and homemade desserts. Whether you're visiting for a family dinner, a romantic date, or a quick lunch, the restaurant provides high-quality service and a cozy dining experience. Many customers appreciate the relaxing ambiance and the attention to detail in every plate.</p>
+              <P>Last time, we worked on a restaurant website project. The goal was to create a modern and responsive design that showcases the restaurant’s menu, services, and location. We used HTML, CSS, and JavaScript to build a clean and user-friendly interface. The homepage includes a beautiful food banner, a navigation bar, and sections like "About Us", "Menu", and "Contact". We also added animations and interactive elements to improve the user experience. The site looks good on both desktop and mobile devices.</P>
+            </div>
+          </div>
+      </div>
 
-        <button id="contactWhatsApp" class="btn btn-danger mb-5">Contact us for reservations</button>
-        
-        <img src="./images/banniere contaact.jpg" width="100%" height="500px" alt="">
-      
+      <!-- conteneur contact -->
+      <div id="Contact" class="my-5 container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+          <div class="col">
+          <h2 class="fw-bold">Contact & Reservations 📞✨</h2>
+          <p>       
+            Planning a special dinner or a gathering with loved ones? Reserve your table at NEXLY for an unforgettable dining experience!
+            You can book your reservation by calling us at <a class="link text-decoration-none link-primary" href="tel:+2250586247542"> +225 ##########</a> or sending an email to <a class="link text-decoration-none link-primary" href="mailto">nexlyfood@gmail.com</a>.
+            For convenience, you can also fill out our online reservation form on our website.
+            Our team is here to assist you with any special requests to make your visit perfect.
+            We look forward to welcoming you soon! 🍽😊
+          </p>
+          <button id="contactWhatsApp" class="btn btn-danger mb-5">Contact us for reservations</button>
+          </div>
+
+          <!-- contact formulaire -->
+          <div class="col text-start">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Entrer votre Nom">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button id="sendMail" class="btn btn-primary">Envoyer</button>
+          </div>
         <!-- fin contact -->
       </div>
 
@@ -279,8 +311,48 @@
   </main>
 
   <!-- debut footer -->
-  <footer class="container text-center p-4">
-    <div>
+  <footer class="container-fluid text-center py-5 text-bg-secondary">
+    
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-3 mb-5">
+
+      <div class="col">
+        <h2 class="font-bold"><i>NEXLY FOOD 🍔</i></h2>
+        <p>Nous mettons en avant nos services de qualités pour la sactifaction de tous. Plus de 1 Millon de personnes utilisent nos services</p>
+        <div class="mt-5 mt-lg-0 text-center">
+          <h3>Reseaux Sociaux</h3>
+          <div class="d-flex gap-4 justify-content-center mt-3">
+              <i class="fab fa-facebook-f text-dark fs-4"><a href=""></a></i>
+              <i class="fab fa-x-twitter text-dark fs-4"><a href=""></a></i>
+              <i class="fab fa-instagram text-dark fs-4"><a href=""></a></i>
+              <i class="fab fa-linkedin-in text-dark fs-4"><a href=""></a></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5 mt-lg-0">
+        <h2>Compagnies</h2>
+        <ul class="navbar-nav">
+          <li class="nav-item">Les resto du coeur</li>
+          <li class="nav-item">Un don, Un sourire</li>
+          <li class="nav-item">Le service pour tous</li>
+          <li class="nav-item">les legions</li>
+        </ul>
+      </div>
+
+      <div class="col mt-5 mt-lg-0">
+        <h2>Respect et Conditions</h2>
+        <ul class="navbar-nav">
+          <li>Mentions légale</li>
+          <li> FAQ</li>
+          <li>Conditions s'utilisation</li>
+          <li>Politique de cookies</li>
+          <li>Loi sur les services numériques</li>
+        </ul>    
+               
+      </div>
+    </div>
+
+    <div class="text-bg-light container-fluid py-4 px-0">
         &copy; NEXLY FOOD ALL RIGHT RESERVED. by Chico-WebDev
     </div>
 
